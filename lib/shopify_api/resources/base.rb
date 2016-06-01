@@ -51,6 +51,8 @@ module ShopifyAPI
       def activate_session(session)
         self.site = session.site
         self.headers.merge!('X-Shopify-Access-Token' => session.token)
+
+        return 'hello world'
       end
 
       def clear_session
